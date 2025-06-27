@@ -75,14 +75,19 @@ Powered by:
 
 ---
 git clone https://github.com/akashagalave/Medical-Chatbot.git
+
 cd Medical-Chatbot
+
 pip install -r requirements.txt
 
 ---
 
 Create a .env file with your API keys:
 
+
 PINECONE_API_KEY=your_pinecone_api_key
+
+
 OPENAI_API_KEY=your_openai_api_key
 
 
