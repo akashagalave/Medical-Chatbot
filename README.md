@@ -1,57 +1,99 @@
-Medical-Chatbot
-==============================
+<h1 align="center">🩺 Medical Chatbot</h1>
 
-End To End Medical Chatbot.
+<p align="center">
+  <b>Your AI-powered health assistant — medical advice at your fingertips.</b><br/>
+  <i>A conversational chatbot that leverages LangChain, Pinecone, and OpenAI for intelligent, context-aware responses.</i>
+</p>
 
-Project Organization
-------------
+---
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+## 🚀 Project Vision
+
+Access to quick and reliable medical advice can be life-changing.  
+But searching through heaps of medical info is time-consuming and often confusing.
+
+🎯 **Mission**: Provide accurate, instant answers to your health queries through natural conversation.  
+⚡ **Result**: A seamless medical chatbot that understands your questions and retrieves trustworthy info.
+
+---
+
+## 🧠 The Intelligence Layer
+
+> “Ask health questions naturally — get medically-informed answers.”
+
+Powered by:  
+- **OpenAI embeddings (`text-embedding-3-small`)** for semantic understanding  
+- **Pinecone Vector Store** for fast, relevant document retrieval  
+- **LangChain framework** to orchestrate the conversational pipeline  
+
+---
+
+## 🌐 Who's This For?
+
+| 👥 **Role**          | 💡 **How It Helps**                                           |
+|---------------------|--------------------------------------------------------------|
+| 🏥 **Patients**      | Quickly get advice on common symptoms and medications        |
+| 🩺 **Healthcare Staff**| Assist with quick information retrieval for patient queries |
+| 📚 **Medical Students**| Explore medical knowledge interactively                      |
+
+---
+
+## 🚀 Watch It in Action
+
+![Medical Chatbot on AWS EC2](result/ec2_running.png)  
+*Running smoothly on AWS EC2 with Docker container deployment.*
+
+---
+
+## 🧰 Behind the Scenes – The Tech Stack
+
+| 🧩 **Layer**            | ⚙️ **Tools & Frameworks**                                        |
+|-------------------------|-----------------------------------------------------------------|
+| **Embedding & Retrieval** | OpenAI (`text-embedding-3-small`), Pinecone                      |
+| **Conversational Logic** | LangChain, ChatPromptTemplate                                    |
+| **Backend API**         | Flask app                                                        |
+| **Deployment**          | Docker, AWS EC2, AWS ECR, CI/CD with CodeDeploy                 |
+
+---
+
+## ✨ Core Highlights
+
+💬 **Context-Aware Responses**  
+→ Uses vector search to retrieve relevant medical info on the fly.
+
+🔒 **Secure & Scalable**  
+→ Containerized app deployed on AWS EC2 with Docker for robustness.
+
+⚡ **Efficient Embeddings**  
+→ Uses OpenAI’s optimized embedding model for fast and accurate similarity search.
+
+---
+
+## 🧪 Try It Yourself – Run Locally
+
+### 🔧 Step 1: Clone and Setup Backend
+
+---
+git clone https://github.com/akashagalave/Medical-Chatbot.git
+cd Medical-Chatbot
+pip install -r requirements.txt
+
+---
+
+Create a .env file with your API keys:
+
+PINECONE_API_KEY=your_pinecone_api_key
+OPENAI_API_KEY=your_openai_api_key
 
 
---------
+Start the Flask server:
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+python app.py
+
+
+---
+
+
+
+Built with grit, grind, and ❤️ by [Akash Agalave](https://github.com/akashagalave)
+
